@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="content">
+    <header>
+        <div class="head_img"><img src="image/img1.png" class="head_img_src"/></div>
+        <div>
+            <span><span class="userName">User1</span><span class="userContent"> wants to find beginner-friendly</span></span>
+            <br>
+            <span> </span>
+        </div>
+    </header>
+    <div class="con">
+        <div class="con_filter">
+            <div class="filter_top">
+                <div class="con_title">Hero attribute</div>
+                <br>
+                <div class="checkbox_con">
+                    <input type="checkbox" id="fruit1" name="fruit" value="Fighter" checked>
+                    <label for="fruit1">Fighter</label>
+                    <input type="checkbox" id="fruit2" name="fruit" value="Tank" checked>
+                    <label for="fruit2">Tank</label>
+                    <input type="checkbox" id="fruit3" name="fruit" value="Mage" checked>
+                    <label for="fruit3">Mage</label>
+                    <input type="checkbox" id="fruit4" name="fruit" value="Support" checked>
+                    <label for="fruit4">Support</label>
+                    <input type="checkbox" id="fruit5" name="fruit" value="Marksman" checked>
+                    <label for="fruit5">Marksman</label>
+                    <input type="checkbox" id="fruit6" name="fruit" value="Assassin" checked>
+                    <label for="fruit6">Assassin</label>
+
+                </div>
+                <br>
+                <div class="con_title">Difficulty selection: <span class="dif_number">10</span></div>
+                <input type="range" id="dif_ipt" name="Difficulty" min="1" max="10" value="10">
+            </div>
+            <div style="padding: 20px">
+                <div class="con_title">Hero List</div>
+                <br>
+                <div class="hero_list">
+<!--                    <div>-->
+<!--                        <img src="image/Alistar.png"/>-->
+<!--                        <span>Alistar</span>-->
+<!--                    </div>-->
+                </div>
+            </div>
+
+            <div class="generate_btn">Start comparing</div>
+
+
+        </div>
+        <div class="chat_one">
+            <div class="chat_title">Hero attribute comparison</div>
+            <div class="hero_img_list">
+				<div class="hero_item">
+					<img src="" alt="" class="hero_img_list1">
+					<span class="hero_label1"></span>
+				</div>
+				<div class="hero_item">
+					<img src="" alt="" class="hero_img_list2">
+					<span class="hero_label2"></span>
+				</div>
+            </div>
+            <svg id="radarChart" width="100%" height="500"></svg>
+        </div>
+        <div>
+            <div class="chat_title">Hero attribute comparison</div>
+            <div class="hero_img_list">
+                <img src="" alt="" class="hero_img_list1">
+                <img src="" alt="" class="hero_img_list2">
+            </div>
+            <div id="barChart" style="position: relative;"></div>
+        </div>
+    </div>
+</div>
+<script src="hero.js"></script>
+</body>
+</html>
